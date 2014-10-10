@@ -1,5 +1,7 @@
+package LApp;
+
 import java.util.Iterator;
-import Entity
+import FList.*;
 
 public class Main {
 
@@ -21,7 +23,7 @@ public class Main {
         // Step 4: print list out
         System.out.println("augmented list");
         mylist.print(System.out);
-        
+
     }
 
     public static void addArray(MyList l, Entity[] arr) {
