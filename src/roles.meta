@@ -1,0 +1,37 @@
+{
+	"features" : [
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base",
+		"Base"
+	],
+	"roles": {
+		"print": {
+			"Base": "print__wrappee__Base",
+			"more": "print"
+		},
+		"main": {
+			"Base": "main__wrappee__Base",
+			"last": "main"
+		},
+		"printMe": {
+			"Base": "printMe__wrappee__Base",
+			"Cruel": "printMe"
+		}
+	}
+
+}
