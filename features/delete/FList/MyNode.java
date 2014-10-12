@@ -8,4 +8,8 @@ public   class  MyNode {
 	public MyNode(Entity elem) {
 		deleted = false;
 	}
+	
+	public String toString() {
+		return original() + " " + deleted;
+	}
 }

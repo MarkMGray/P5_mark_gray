@@ -23,9 +23,15 @@ public     class   MyNode {
 
 	
 
-    public String toString() {
+     private String  toString__wrappee__Base  () {
         return elem.toString();
     }
+
+	
+	
+	public String toString() {
+		return toString__wrappee__Base() + " " + deleted;
+	}
 
 	
 	

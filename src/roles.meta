@@ -99,6 +99,10 @@
 		},
 		"delete": {
 			"delete": "delete"
+		},
+		"toString": {
+			"Base": "toString__wrappee__Base",
+			"delete": "toString"
 		}
 	}
 

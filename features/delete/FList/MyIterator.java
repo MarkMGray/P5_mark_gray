@@ -34,6 +34,9 @@ public   class  MyIterator  implements Iterator {
     }
     public Entity next() {
         if (alreadyAdvanced) {
+        	while (current.deleted && current.right != null) {
+            	current = current.right;
+            }
             alreadyAdvanced = false;
         } else {
             current = current.right;
@@ -49,8 +52,6 @@ public   class  MyIterator  implements Iterator {
     	while (newCurrent != null && newCurrent.deleted) {
     		newCurrent = newCurrent.right;
     	}
-//    	System.out.println("Current - " + current.toString());
-//    	System.out.println("New Current - " + newCurrent.toString());
     	list.delete(current);
     	current = newCurrent;
     	alreadyAdvanced = true;
