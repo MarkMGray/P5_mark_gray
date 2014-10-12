@@ -165,9 +165,9 @@ public     class   TestCases {
 			}
 		}
 		if (pass) {
-			System.out.println("Test: Remove nodes from List - Passed");
+			System.out.println("Test: Remove all nodes from List - Passed");
 		} else {
-			fail("Test: Remove nodes from List - Failed");
+			fail("Test: Remove all nodes from List - Failed");
 		}
 	}
 
