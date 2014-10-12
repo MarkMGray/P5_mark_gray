@@ -94,57 +94,33 @@
 	"roles": {
 		"insert": {
 			"Base": "insert__wrappee__Base",
-			"dbl": "insert__wrappee__Base",
 			"doublyLinkedList": "insert__wrappee__doublyLinkedList",
-			"singlyLinkedList": "insert__wrappee__Base",
-			"OrderedSL": "insert__wrappee__Base",
-			"OrderedDBL": "insert"
-		},
-		"main": {
-			"Base": "main__wrappee__Base",
-			"dbl": "main__wrappee__Base",
-			"remove": "main",
-			"doublyLinkedList": "main__wrappee__doublyLinkedList",
-			"singlyLinkedList": "main__wrappee__Base"
-		},
-		"addArray": {
-			"dbl": "addArray",
-			"remove": "addArray",
-			"doublyLinkedList": "addArray",
-			"singlyLinkedList": "addArray"
+			"OrderedDBL": "insert",
+			"OrderedSL": "insert__wrappee__Base"
 		},
 		"remove": {
 			"remove": "remove",
-			"delete": "remove",
-			"singlyLinkedList": "remove"
+			"delete": "remove"
+		},
+		"main": {
+			"Base": "main__wrappee__Base",
+			"remove": "main"
+		},
+		"addArray": {
+			"remove": "addArray"
 		},
 		"hasNext": {
-			"delete": "hasNext",
-			"singlyLinkedList": "hasNext"
+			"delete": "hasNext"
 		},
 		"next": {
-			"delete": "next",
-			"singlyLinkedList": "next"
+			"delete": "next"
 		},
 		"delete": {
 			"delete": "delete"
 		},
 		"toString": {
 			"Base": "toString__wrappee__Base",
-			"delete": "toString",
-			"singlyLinkedList": "toString__wrappee__Base"
-		},
-		"iterator": {
-			"singlyLinkedList": "iterator",
-			"OrderedSL": "iterator"
-		},
-		"print": {
-			"singlyLinkedList": "print",
-			"OrderedSL": "print"
-		},
-		"addNodesToListTest": {
-			"singlyLinkedList": "addNodesToListTest",
-			"OrderedSL": "addNodesToListTest"
+			"delete": "toString"
 		}
 	}
 
