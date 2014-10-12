@@ -20,7 +20,11 @@ public class MyList implements Iterable {
     		leftNode = rightNode;
     		rightNode = rightNode.right;
     	}
-    	leftNode.right = n;
+    	n.left = leftNode;
     	n.right = rightNode;
+    	leftNode.right = n;
+    	if (rightNode != null) {
+    		rightNode.left = n;
+    	}
     }
 }
