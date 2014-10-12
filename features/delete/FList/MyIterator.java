@@ -1,36 +1,17 @@
-package FList;  
+package FList; 
 
 import java.util.Iterator; 
-import LApp.Entity;  
 
-import org.omg.CORBA.Current; 
+import org.omg.CORBA.Current;
 
-import com.sun.xml.internal.messaging.saaj.packaging.mime.Header; 
+import com.sun.xml.internal.messaging.saaj.packaging.mime.Header;
 
-import FList.MyNode;  
+import FList.MyNode;
+import LApp.Entity; 
 
-public     class   MyIterator   implements Iterator {
-	
+public   class  MyIterator  implements Iterator {
 
-    MyNode current;
-
-	
-    MyList list;
-
-	
-    boolean alreadyAdvanced;
-
-	
-
-    MyIterator(MyList list) {
-        current = list.head;
-        this.list = list;
-        alreadyAdvanced = true;
-    }
-
-	
-
-    public boolean hasNext  () {
+    public boolean hasNext() {
         if (alreadyAdvanced) {
         	MyNode tempCurrent = current;
         	if (tempCurrent == null) {
@@ -51,9 +32,7 @@ public     class   MyIterator   implements Iterator {
             return tempCurrent != null;
         }
     }
-
-	
-    public Entity next  () {
+    public Entity next() {
         if (alreadyAdvanced) {
             alreadyAdvanced = false;
         } else {
@@ -63,9 +42,7 @@ public     class   MyIterator   implements Iterator {
             }
         }
         return current.elem;
-    }
-
-		
+    }	
     public void remove  () {
     	MyNode newCurrent;
     	newCurrent = current.right;
@@ -78,6 +55,4 @@ public     class   MyIterator   implements Iterator {
     	current = newCurrent;
     	alreadyAdvanced = true;
     }
-
-
 }

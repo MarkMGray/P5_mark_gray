@@ -1,19 +1,28 @@
-package FList;
+package FList; 
 
-import java.util.Iterator;
-import LApp.Entity;
+import java.util.Iterator; 
+import LApp.Entity; 
 
-public class MyIterator implements Iterator {
+public   class  MyIterator  implements Iterator {
+	
 
     MyNode current;
+
+	
     MyList list;
+
+	
     boolean alreadyAdvanced;
+
+	
 
     MyIterator(MyList list) {
         current = list.head;
         this.list = list;
         alreadyAdvanced = true;
     }
+
+	
 
     public boolean hasNext() {
         if (alreadyAdvanced) {
@@ -22,6 +31,8 @@ public class MyIterator implements Iterator {
             return current.right != null;
         }
     }
+
+	
 
     public Entity next() {
         if (alreadyAdvanced) {
@@ -32,7 +43,14 @@ public class MyIterator implements Iterator {
         return current.elem;
     }
 
-    public void remove() {
-    	// Not implemented for Base Class
+	
+    public void remove  () {
+    	MyNode newCurrent;
+    	newCurrent = current.right;
+    	list.delete(current);
+    	current = newCurrent;
+    	alreadyAdvanced = true;
     }
+
+
 }

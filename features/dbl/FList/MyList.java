@@ -7,9 +7,15 @@ public class MyList implements Iterable {
 
 	MyNode tail;
 	
-	 void insert(MyNode n) {
-	     original(n);   
-		
-	 }
-
+	public MyList() {
+		tail = null;
+	}
+	
+	void insert(MyNode n) {
+	     original(n);
+	     n.left = null;
+	     if (n.right != null) {
+	    	 n.right.left = n;
+	     }
+	}
 }

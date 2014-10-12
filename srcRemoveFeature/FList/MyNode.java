@@ -1,8 +1,8 @@
-package FList;  
+package FList; 
 
-import LApp.Entity;  
+import LApp.Entity; 
 
-public     class   MyNode {
+public   class  MyNode {
 	
 
     Entity elem;
@@ -17,8 +17,6 @@ public     class   MyNode {
         right = null;
     
 		left = null;
-	
-		deleted = false;
 	}
 
 	
@@ -30,9 +28,6 @@ public     class   MyNode {
 	
 	
 	MyNode left;
-
-	
-	boolean deleted;
 
 
 }

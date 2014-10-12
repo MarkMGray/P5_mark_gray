@@ -1,10 +1,10 @@
-package LApp;  
+package LApp; 
 
-import java.util.Iterator;  
-import FList.*;  
-import LApp.Entity;  
+import java.util.Iterator; 
+import FList.*; 
+import LApp.Entity; 
 
-public     class   Main {
+public   class  Main {
 	
 
     static MyList mylist  ;

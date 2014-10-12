@@ -1,36 +1,104 @@
 {
 	"features" : [
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
+		"dbl",
+		"remove",
+		"delete",
 		"Base",
-		"Base"
+		"dbl",
+		"remove",
+		"delete",
+		"Base",
+		"dbl",
+		"remove",
+		"delete"
 	],
 	"roles": {
-		"print": {
-			"Base": "print__wrappee__Base",
-			"more": "print"
+		"insert": {
+			"Base": "insert__wrappee__Base",
+			"dbl": "insert"
 		},
 		"main": {
 			"Base": "main__wrappee__Base",
-			"last": "main"
+			"dbl": "main__wrappee__dbl",
+			"remove": "main"
 		},
-		"printMe": {
-			"Base": "printMe__wrappee__Base",
-			"Cruel": "printMe"
+		"addArray": {
+			"dbl": "addArray",
+			"remove": "addArray"
+		},
+		"remove": {
+			"remove": "remove",
+			"delete": "remove"
+		},
+		"hasNext": {
+			"delete": "hasNext"
+		},
+		"next": {
+			"delete": "next"
+		},
+		"delete": {
+			"delete": "delete"
 		}
 	}
 
