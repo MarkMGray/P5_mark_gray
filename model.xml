@@ -2,8 +2,16 @@
 	<featureModel chosenLayoutAlgorithm="1">
 		<struct>
 			<and abstract="true" mandatory="true" name="P5_mark_gray">
-				<feature mandatory="true" name="Base"/>
-				<feature name="dbl"/>
+				<alt mandatory="true" name="Base">
+					<alt mandatory="true" name="singlyLinkedList">
+						<feature mandatory="true" name="OrderedSL"/>
+						<feature mandatory="true" name="UnorderedSL"/>
+					</alt>
+					<alt mandatory="true" name="doublyLinkedList">
+						<feature mandatory="true" name="OrderedDBL"/>
+						<feature mandatory="true" name="UnorderedDBL"/>
+					</alt>
+				</alt>
 				<feature name="remove"/>
 				<feature name="delete"/>
 			</and>
@@ -12,7 +20,7 @@
 			<rule>
 				<imp>
 					<var>remove</var>
-					<var>dbl</var>
+					<var>doublyLinkedList</var>
 				</imp>
 			</rule>
 			<rule>

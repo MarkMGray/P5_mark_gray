@@ -1,24 +1,26 @@
-package FList;  
-import java.io.PrintStream;  
-import LApp.Entity;  
-import java.util.Iterator;  
+package FList; 
+import java.io.PrintStream; 
+import LApp.Entity; 
+import java.util.Iterator; 
 
-public     class   MyList   implements Iterable {
+import FList.MyNode; 
+
+public   class  MyList  implements Iterable {
 	
 
-    MyNode head;
+    MyNode head  ;
 
 	
-	
-	public MyList  () {
+
+    public MyList  () {
         head = null;
     
-		tail = null;
-	}
+        head = null;
+    }
 
 	
 
-    public void insert(Entity elem) {
+    public void insert  (Entity elem) {
         insert(new MyNode(elem));
     }
 
@@ -30,14 +32,23 @@ public     class   MyList   implements Iterable {
     }
 
 	
-	
-	void insert(MyNode n) {
-	     insert__wrappee__Base(n);
-	     n.left = null;
-	     if (n.right != null) {
-	    	 n.right.left = n;
-	     }
-	}
+
+    void insert(MyNode n) {
+    	//List is null or its the smallest element.. Insert into the start of list
+    	if (head == null || head.elem.compare(head.elem, n.elem) >= 0) {
+    		insert__wrappee__Base(n);
+    		return;
+    	}
+    	MyNode rightNode = head;
+    	MyNode leftNode = head;
+    	//Insert into the middle or end of list
+    	while (rightNode != null && rightNode.elem.compare(rightNode.elem, n.elem) < 0) {
+    		leftNode = rightNode;
+    		rightNode = rightNode.right;
+    	}
+    	leftNode.right = n;
+    	n.right = rightNode;
+    }
 
 	
 
@@ -54,16 +65,6 @@ public     class   MyList   implements Iterable {
             out.println(e);
         }
     }
-
-	
-
-	MyNode tail;
-
-	
-    
-	public void delete  (MyNode n) {
-		n.deleted = true;
-	}
 
 
 }

@@ -1,108 +1,113 @@
 {
 	"features" : [
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete",
+		"singlyLinkedList",
+		"OrderedSL",
 		"Base",
-		"dbl",
-		"remove",
-		"delete"
+		"singlyLinkedList",
+		"OrderedSL"
 	],
 	"roles": {
 		"insert": {
 			"Base": "insert__wrappee__Base",
-			"dbl": "insert"
+			"dbl": "insert__wrappee__Base",
+			"doublyLinkedList": "insert__wrappee__Base",
+			"singlyLinkedList": "insert__wrappee__Base",
+			"OrderedSL": "insert"
 		},
 		"main": {
 			"Base": "main__wrappee__Base",
-			"dbl": "main__wrappee__dbl",
-			"remove": "main"
+			"dbl": "main__wrappee__Base",
+			"remove": "main",
+			"doublyLinkedList": "main__wrappee__doublyLinkedList",
+			"singlyLinkedList": "main__wrappee__Base"
 		},
 		"addArray": {
 			"dbl": "addArray",
-			"remove": "addArray"
+			"remove": "addArray",
+			"doublyLinkedList": "addArray",
+			"singlyLinkedList": "addArray"
 		},
 		"remove": {
 			"remove": "remove",
-			"delete": "remove"
+			"delete": "remove",
+			"singlyLinkedList": "remove"
 		},
 		"hasNext": {
-			"delete": "hasNext"
+			"delete": "hasNext",
+			"singlyLinkedList": "hasNext"
 		},
 		"next": {
-			"delete": "next"
+			"delete": "next",
+			"singlyLinkedList": "next"
 		},
 		"delete": {
 			"delete": "delete"
 		},
 		"toString": {
 			"Base": "toString__wrappee__Base",
-			"delete": "toString"
+			"delete": "toString",
+			"singlyLinkedList": "toString__wrappee__Base"
+		},
+		"iterator": {
+			"singlyLinkedList": "iterator",
+			"OrderedSL": "iterator"
+		},
+		"print": {
+			"singlyLinkedList": "print",
+			"OrderedSL": "print"
+		},
+		"addNodesToListTest": {
+			"singlyLinkedList": "addNodesToListTest",
+			"OrderedSL": "addNodesToListTest"
 		}
 	}
 
